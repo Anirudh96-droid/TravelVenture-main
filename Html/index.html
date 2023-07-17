@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HomeStays</title>
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
-    
+<!-- Header Section -->
+<header>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="logo" href="index.html">Travel Venture</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travel-packages.html">Travel Packages</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+        </ul>
+        <div class="user-section">
+            <a href="login.html">Login</a> or <a href="login.html">Create Account</a>
+        </div>
+    </nav>
+</header>
+
+
+
+
+    <!-- Home Page -->
+    <section id="home">
+        
+
+        <!-- Content of the home page -->
+        <section id="package-booking">
+            <h2>Package Booking</h2>
+            <div class="swipe-container">
+                <div class="swipe-content">
+                    <div class="package-card">
+                        <h1>Content 1</h1>
+                    </div>
+                    <div class="package-card">
+                        <h1>Content 2</h1>
+                    </div>
+                    <div class="package-card">
+                        <!-- Package 3 Content -->
+                    </div>
+                    <div class="package-card">
+                        <!-- Package 4 Content -->
+                    </div>
+                    <div class="package-card">
+                        <!-- Package 5 Content -->
+                    </div>
+                </div>
+                <div class="swipe-arrow prev">&lt;</div>
+                <div class="swipe-arrow next">&gt;</div>
+            </div>
+        </section>
+        
+        <!-- Hotel Booking Section -->
+        <section id="hotel-booking">
+            <h2>Hotel Booking</h2>
+            <div class="swipe-container">
+                <div class="swipe-content">
+                    <div class="hotel-card">
+                        <!-- Hotel 1 Content -->
+                    </div>
+                    <div class="hotel-card">
+                        <!-- Hotel 2 Content -->
+                    </div>
+                    <div class="hotel-card">
+                        <!-- Hotel 3 Content -->
+                    </div>
+                    <div class="hotel-card">
+                        <!-- Hotel 4 Content -->
+                    </div>
+                    <div class="hotel-card">
+                        <!-- Hotel 5 Content -->
+                    </div>
+                </div>
+                <div class="swipe-arrow prev">&lt;</div>
+                <div class="swipe-arrow next">&gt;</div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Travel Blog</a></li>
+            <li><a href="#">Book Hotels</a></li>
+            <li><a href="#">Make a Payment</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Swipe Animation
+    var swipeContent = $('.swipe-content');
+    var swipeContainer = $('.swipe-container');
+    var swipeWidth = swipeContent.outerWidth();
+    var containerWidth = swipeContainer.width();
+    var position = 0;
+
+    $('.swipe-arrow.next').click(function() {
+        position -= containerWidth;
+        if (position < -swipeWidth + containerWidth) {
+            position = -swipeWidth + containerWidth;
+        }
+        swipeContent.css('transform', 'translateX(' + position + 'px)');
+    });
+
+    $('.swipe-arrow.prev').click(function() {
+        position += containerWidth;
+        if (position > 0) {
+            position = 0;
+        }
+        swipeContent.css('transform', 'translateX(' + position + 'px)');
+    });
+});
+</script>
 </body>
 </html>

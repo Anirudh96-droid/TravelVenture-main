@@ -1,0 +1,161 @@
+/* Reset default browser styles */
+body, header, nav, ul, li, h1, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #f2f2f28a;
+    text-decoration: none;
+    text-decoration: none;
+    border-bottom: none;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-section {
+    margin-left: auto;
+}
+
+.user-section a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+}
+
+/* Home Page styles */
+#home {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Package Card */
+.package-card,
+.hotel-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover,
+.hotel-card:hover {
+    transform: scale(1.1);
+}
+
+/* Swipe Animation */
+.swipe-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.swipe-content {
+    display: flex;
+    width: max-content;
+    transition: transform 0.3s ease;
+}
+
+/* Swipe Navigation Arrows */
+.swipe-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.swipe-arrow:hover {
+    background-color: #ccc;
+}
+
+.swipe-arrow.prev {
+    left: 10px;
+}
+
+.swipe-arrow.next {
+    right: 10px;
+}
+
