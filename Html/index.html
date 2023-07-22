@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeStays</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet"  type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+        .dialog-box {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+    
+        .dialog-content {
+          /*background-color: #fefefe;*/
+          margin: 15% auto;
+          padding: 20px;
+          /*border: 1px solid #888;*/
+          width: 400px;
+        }
+      </style>
 </head>
 <body>
 <!-- Header Section -->
@@ -19,7 +41,7 @@
             <li><a href="hotels.html">Hotels</a></li>
         </ul>
         <div class="user-section">
-            <a href="login.html">Login</a> or <a href="login.html">Create Account</a>
+            <a href="#" onclick="openDialogLogin()" >Login or Create Account</a>
         </div>
     </nav>
 </header>
@@ -56,7 +78,7 @@
                 <div class="swipe-arrow next">&gt;</div>
             </div>
         </section>
-        
+
         <!-- Hotel Booking Section -->
         <section id="hotel-booking">
             <h2>Hotel Booking</h2>
@@ -96,11 +118,122 @@
         </ul>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Login -->
+
+    <div id="dialogLogin" class="dialog-box">
+        <div class="dialog-content">
+            <div class="container">
+                <h2>Login Page</h2>
+                <form method="post"
+                    action="../php/login.php">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit">Login</button>
+                      </div>
+                </form>
+                <br><br>
+                <p> Does not have an account?
+                    <a href="#" onclick="openDialogRegsiter()" >Click Here</a>
+                    
+                </p>
+                <p>Forgot Password
+                    <a href = "../Html/forgotPassword.html">forgot Password</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Register -->
+
+    <div id="dialogRegsiter" class="dialog-box">
+        <div class="dialog-content">
+            <div class="container">
+                <h2>Travel Website Registration</h2>
+                <form method="post" action="../php/register.php">
+                    <div class="form-group">
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="regnumber">Phone number:</label>
+                    <input type="tel" id="regnumber" name="regnumber" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"  min="18" max="99" required>
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" id="gendermale" name="gender" value="male" required>
+                    <label for="gendermale">Male</label>
+                    <input type="radio" id="genderfemale" name="gender" value="female" required>
+                    <label for="genderfemale">Female</label>
+                    <input type="radio" id="genderother" name="gender" value="other" required>
+                    <label for="genderother">Other</label>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" id="cpassword" name="cpassword" required>
+                    </div>
+            
+            
+                    <div class="form-group">
+                    <button type="submit">Register</button>
+                    </div>
+                    
+                </form>
+                <p> Already have an account?</p>
+                <a href="#" onclick="openDialogLogin()">Click Here</a>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
-$(document).ready(function() {
+
+    var dialogLogin = document.getElementById("dialogLogin");
+    var dialogRegsiter = document.getElementById("dialogRegsiter");
+
+    function openDialogLogin() {
+        dialogLogin.style.display = "block";
+        dialogRegsiter.style.display = "none";
+    }
+    function openDialogRegsiter() {
+        dialogRegsiter.style.display = "block";
+        dialogLogin.style.display = "none";
+    }
+$("document").ready(function() {
     // Swipe Animation
     var swipeContent = $('.swipe-content');
     var swipeContainer = $('.swipe-container');
@@ -115,6 +248,7 @@ $(document).ready(function() {
         }
         swipeContent.css('transform', 'translateX(' + position + 'px)');
     });
+
 
     $('.swipe-arrow.prev').click(function() {
         position += containerWidth;
