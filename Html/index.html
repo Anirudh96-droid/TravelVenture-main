@@ -3,59 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeStays</title>
+    <title>Home</title>
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../jquery-ui-1.13.2. Dark/jquery-ui.css">
+  <!-- swiper css link  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
 <!-- Header Section -->
-<header>
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <a class="logo" href="index.html">Travel Venture</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="travel-packages.html">Travel Packages</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-        </ul>
-        <div class="user-section">
-            <a href="login.html">Login</a> or <a href="login.html">Create Account</a>
-        </div>
-    </nav>
-</header>
 
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a class="logo" href="index.html">Travel Venture.</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="package.html">Travel Packages</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="book.html">book</a></li>
+                <li><a href="login.html">Login</a> or <a href="login.html">Create Account</a></li>
+            </ul>
+           
+        </nav>
+    </header>
 
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="swiper home-slider">
+ 
+       <div class="swiper-wrapper">
+ 
+          <div class="swiper-slide slide" style="background:url(../images/home-slide-1.jpg) no-repeat">
+             <div class="content">
+                <span>explore, discover, travel</span>
+                <h3>travel arround the world</h3>
+                <a href="package.html" class="btn">discover more</a>
+             </div>
+          </div>
+ 
+          <div class="swiper-slide slide" style="background:url(../images/home-slide-2.jpg) no-repeat">
+             <div class="content">
+                <span>explore, discover, travel</span>
+                <h3>discover the new places</h3>
+                <a href="package.html" class="btn">discover more</a>
+             </div>
+          </div>
+ 
+          <div class="swiper-slide slide" style="background:url(../images/home-slide-3.jpg) no-repeat">
+             <div class="content">
+                <span>explore, discover, travel</span>
+                <h3>make your tour worthwhile</h3>
+                <a href="package.html" class="btn">discover more</a>
+             </div>
+          </div>
+          
+       </div>
+ 
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+ 
+    </div>
+ 
+ </section>
 
 
     <!-- Home Page -->
-    <section id="home">
+
+    <section class="home-packages">
+        <h1 class="heading-title"> our packages </h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="..//images/img-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>adventure &amp; tour</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="..//images/img-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>adventure &amp; tour</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="..//images/img-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>adventure &amp; tour</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="load-more"> <a href="package.html" class="btn">load more</a> </div>
+        </div>
+    </section>
         
 
-        <!-- Content of the home page -->
-        <section id="package-booking">
-            <h2>Package Booking</h2>
-            <div class="swipe-container">
-                <div class="swipe-content">
-                    <div class="package-card">
-                        <h1>Content 1</h1>
-                    </div>
-                    <div class="package-card">
-                        <h1>Content 2</h1>
-                    </div>
-                    <div class="package-card">
-                        <!-- Package 3 Content -->
-                    </div>
-                    <div class="package-card">
-                        <!-- Package 4 Content -->
-                    </div>
-                    <div class="package-card">
-                        <!-- Package 5 Content -->
-                    </div>
-                </div>
-                <div class="swipe-arrow prev">&lt;</div>
-                <div class="swipe-arrow next">&gt;</div>
-            </div>
-        </section>
+       
         
         <!-- Hotel Booking Section -->
         <section id="hotel-booking">
@@ -82,7 +147,6 @@
                 <div class="swipe-arrow next">&gt;</div>
             </div>
         </section>
-    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -97,7 +161,7 @@
     </footer>
 
     <script src="script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
