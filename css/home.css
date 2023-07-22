@@ -267,6 +267,10 @@ footer {
     padding: 20px;
     text-align: center;
 }
+footer .nav-links{
+   justify-content: center;
+
+}
 
 footer ul {
     list-style: none;

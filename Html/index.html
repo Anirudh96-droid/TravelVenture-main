@@ -6,27 +6,6 @@
     <title>Home</title>
     <link rel="stylesheet"  type="text/css" href="../css/home.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <style>
-        .dialog-box {
-          display: none;
-          position: fixed;
-          z-index: 1;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgba(0, 0, 0, 0.4);
-        }
-    
-        .dialog-content {
-          /*background-color: #fefefe;*/
-          margin: 15% auto;
-          padding: 20px;
-          /*border: 1px solid #888;*/
-          width: 400px;
-        }
-      </style>
     <link rel="stylesheet" href="../jquery-ui-1.13.2. Dark/jquery-ui.css">
   <!-- swiper css link  -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -37,7 +16,7 @@
 </head>
 <body>
 <!-- Header Section -->
-<header>
+<!-- <header>
     <nav class="navbar">
         <div class="navbar-brand">
             <a class="logo" href="index.html">Travel Venture</a>
@@ -51,7 +30,7 @@
             <a href="#" onclick="openDialogLogin()" >Login or Create Account</a>
         </div>
     </nav>
-</header>
+</header> -->
 
     <header>
         <nav class="navbar">
@@ -64,7 +43,7 @@
                 <li><a href="about.html">about</a></li>
                 <li><a href="hotels.html">Hotels</a></li>
                 <li><a href="book.html">book</a></li>
-                <li><a href="login.html">Login</a> or <a href="login.html">Create Account</a></li>
+                <li><a href="login.html" onclick="openDialogLogin()">Login</a> or <a href="register.html" onclick="openDialogLogin()">Create Account</a></li>
             </ul>
            
         </nav>
@@ -156,50 +135,20 @@
         </div>
     </section>
         
-
-       
-        
-        <!-- Hotel Booking Section -->
-        <section id="hotel-booking">
-            <h2>Hotel Booking</h2>
-            <div class="swipe-container">
-                <div class="swipe-content">
-                    <div class="hotel-card">
-                        <!-- Hotel 1 Content -->
-                    </div>
-                    <div class="hotel-card">
-                        <!-- Hotel 2 Content -->
-                    </div>
-                    <div class="hotel-card">
-                        <!-- Hotel 3 Content -->
-                    </div>
-                    <div class="hotel-card">
-                        <!-- Hotel 4 Content -->
-                    </div>
-                    <div class="hotel-card">
-                        <!-- Hotel 5 Content -->
-                    </div>
-                </div>
-                <div class="swipe-arrow prev">&lt;</div>
-                <div class="swipe-arrow next">&gt;</div>
-            </div>
-        </section>
-
     <!-- Footer Section -->
-    <footer>
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Travel Blog</a></li>
-            <li><a href="#">Book Hotels</a></li>
-            <li><a href="#">Make a Payment</a></li>
-            <li><a href="#">Contact Us</a></li>
+    <footer style="justify-content: center;">
+        <ul class="nav-links footer">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="package.html">Travel Packages</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="book.html">book</a></li>
         </ul>
     </footer>
 
     <!-- Login -->
 
-    <div id="dialogLogin" class="dialog-box">
+    <!-- <div id="dialogLogin" class="dialog-box">
         <div class="dialog-content">
             <div class="container">
                 <h2>Login Page</h2>
@@ -227,11 +176,11 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
 
         <!-- Register -->
 
-    <div id="dialogRegsiter" class="dialog-box">
+    <!-- <div id="dialogRegsiter" class="dialog-box">
         <div class="dialog-content">
             <div class="container">
                 <h2>Travel Website Registration</h2>
@@ -295,7 +244,7 @@
                 <a href="#" onclick="openDialogLogin()">Click Here</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
