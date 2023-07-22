@@ -6,9 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	// Connect to the database
 	$host = "localhost";
-	$dbname = "Travel";
-	$username_db = "root";
-	$password_db = "";
+	$dbname = "travel";
+	$username_db = "travel";
+	$password_db = "travel";
 
 	try {
 		$db = new PDO(
@@ -24,21 +24,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$stmt->execute();
 		$user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+		$storepassword = $user["password"];
 		if ($user) {
 			// Verify the password
-			if (password_verify($password, $user["password"])) {
+			if (password_verify($password, $storepassword)) {
 				session_start();
 				$_SESSION["user"] = $user;
 
 				echo '<script type="text/javascript">
 	window.onload = function () {
-		window.location.href = "../Html/home.html";
+		alert("successfull");
+		window.location.href = "../Html/index.html";
 	};
 </script>
 ';
 			} else {
 				echo "<h2>Login Failed</h2>";
-				echo "Invalid email or password.";
+				echo "Invalid password.";
 			}
 		} else {
 			echo "<h2>Login Failed</h2>";
