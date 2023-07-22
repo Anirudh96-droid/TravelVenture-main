@@ -29,7 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			// Verify the password
 			if (password_verify($password, $storepassword)) {
 				session_start();
-				$_SESSION["user"] = $user;
+				$_SESSION["USER_ID"] = $user['id'];
+				$_SESSION['USER_NAME']= $user['username'];
 
 				echo '<script type="text/javascript">
 	window.onload = function () {
