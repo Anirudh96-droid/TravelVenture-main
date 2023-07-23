@@ -37,22 +37,6 @@
 </head>
 <body>
 <!-- Header Section -->
-<!-- <header>
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <a class="logo" href="index.html">Travel Venture</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="travel-packages.html">Travel Packages</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-        </ul>
-        <div class="user-section">
-            <a href="#" onclick="openDialogLogin()" >Login or Create Account</a>
-        </div>
-    </nav>
-</header> -->
-
     <header>
         <nav class="navbar">
             <div class="navbar-brand">
@@ -61,11 +45,10 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="package.html">Travel Packages</a></li>
-                <li><a href="about.html">about</a></li>
                 <li><a href="hotels.html">Hotels</a></li>
                 <li><a href="book.html">book</a></li>
-                <li><a href="#" onclick="openDialogLogin()" >Login or Create Account</a>
-<!--<a href="login.html" onclick="openDialogLogin()">Login</a> or <a href="register.html" onclick="openDialogLogin()">Create Account</a></li>-->
+                <li><a href="about.html">about</a></li>
+                <li><a href="#" onclick="openDialogLogin()">Login</a> or <a href="#" onclick="openDialogRegsiter()">Create Account</a>
             </ul>
            
         </nav>
@@ -162,20 +145,20 @@
         <ul class="nav-links footer">
             <li><a href="index.html">Home</a></li>
             <li><a href="package.html">Travel Packages</a></li>
-            <li><a href="about.html">about</a></li>
             <li><a href="hotels.html">Hotels</a></li>
             <li><a href="book.html">book</a></li>
+            <li><a href="about.html">about</a></li>
+
         </ul>
     </footer>
 
     <!-- Login -->
-
     <div id="dialogLogin" class="dialog-box">
         <div class="dialog-content">
+            <span class="close-icon" onclick="closeDialogLogin()"></span>
             <div class="container">
                 <h2>Login Page</h2>
-                <form method="post"
-                    action="../php/login.php">
+                <form method="post" action="../php/login.php">
                     <div class="form-group">
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username" required>
@@ -194,11 +177,12 @@
                     
                 </p>
                 <p>Forgot Password
-                    <a href = "../Html/forgotPassword.html">forgot Password</a>
+                    <a href="../Html/forgotPassword.html">forgot Password</a>
                 </p>
             </div>
         </div>
     </div>
+    
 
         <!-- Register -->
 
@@ -270,44 +254,13 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<script>
+    <!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    var dialogLogin = document.getElementById("dialogLogin");
-    var dialogRegsiter = document.getElementById("dialogRegsiter");
-
-    function openDialogLogin() {
-        dialogLogin.style.display = "block";
-        dialogRegsiter.style.display = "none";
-    }
-    function openDialogRegsiter() {
-        dialogRegsiter.style.display = "block";
-        dialogLogin.style.display = "none";
-    }
-$("document").ready(function() {
-    // Swipe Animation
-    var swipeContent = $('.swipe-content');
-    var swipeContainer = $('.swipe-container');
-    var swipeWidth = swipeContent.outerWidth();
-    var containerWidth = swipeContainer.width();
-    var position = 0;
-
-    $('.swipe-arrow.next').click(function() {
-        position -= containerWidth;
-        if (position < -swipeWidth + containerWidth) {
-            position = -swipeWidth + containerWidth;
-        }
-        swipeContent.css('transform', 'translateX(' + position + 'px)');
-    });
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
 
 
-    $('.swipe-arrow.prev').click(function() {
-        position += containerWidth;
-        if (position > 0) {
-            position = 0;
-        }
-        swipeContent.css('transform', 'translateX(' + position + 'px)');
-    });
-});
-</script>
+
 </body>
 </html>
