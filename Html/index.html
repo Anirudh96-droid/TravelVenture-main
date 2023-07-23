@@ -32,6 +32,21 @@
       /*border: 1px solid #888;*/
       width: 400px;
     }
+
+      /* Close button */
+    .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
   </style>
 
 </head>
@@ -157,6 +172,7 @@
         <div class="dialog-content">
             <span class="close-icon" onclick="closeDialogLogin()"></span>
             <div class="container">
+                <span class="close" id="closeBtn">&times;</span>
                 <h2>Login Page</h2>
                 <form method="post" action="../php/login.php">
                     <div class="form-group">
@@ -189,6 +205,7 @@
     <div id="dialogRegsiter" class="dialog-box">
         <div class="dialog-content">
             <div class="container">
+                <span class="close" id="closeBtnRe">&times;</span>
                 <h2>Travel Website Registration</h2>
                 <form method="post" action="../php/register.php">
                     <div class="form-group">
