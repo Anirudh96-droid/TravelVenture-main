@@ -6,9 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Connect to your database (replace with your own database connection code)
     $servername = "localhost";
-    $username_db = "root";
-    $password_db = "";
-    $database = "Travel";
+    $username_db = "travel";
+    $password_db = "travel";
+    $database = "travel";
 
     // Create a new PDO instance
     $pdo = new PDO("mysql:host=$servername;dbname=$database", $username_db, $password_db);
