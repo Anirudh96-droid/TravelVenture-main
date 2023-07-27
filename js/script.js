@@ -83,35 +83,33 @@ loadMoreBtn.onclick = () =>{
     }
 
     // Close login dialog when clicking outside the dialog box
-    window.onclick = function(event) {
-        var dialogLogin = document.getElementById("dialogLogin");
+    document.addEventListener("click", function(event) {
         if (event.target === dialogLogin) {
-            dialogLogin.style.display = "none";
+          closeModal();
         }
-    }
-
-    // Close login dialog when clicking on the close icon
-    function closeDialogLogin() {
-        document.getElementById("dialogLogin").style.display = "none";
-    }
-
-    // Open registration dialog
-    function openDialogRegister() {
-        document.getElementById("dialogRegister").style.display = "block";
-    }
+      });
 
     // Close registration dialog when clicking outside the dialog box
     window.onclick = function(event) {
-        var dialogRegister = document.getElementById("dialogRegister");
-        if (event.target === dialogRegister) {
-            dialogRegister.style.display = "none";
+        if (event.target === dialogRegsiter) {
+            dialogRegsiter.style.display = "none";
         }
     }
 
     // Close registration dialog when clicking on the close icon
-    function closeDialogRegister() {
-        document.getElementById("dialogRegister").style.display = "none";
-    }
+    const closeBtnRe = document.getElementById("closeBtnRe");
+    function closeModalRe() {
+        dialogRegsiter.style.display = "none";
+      }
+    closeBtnRe.addEventListener("click", closeModalRe);
+
+    // Close Login dialog when clicking on the close icon
+    const closeBtn = document.getElementById("closeBtn");
+    function closeModal() {
+        dialogLogin.style.display = "none";
+      }
+    closeBtn.addEventListener("click", closeModal);
+
 
     // reviews area script
     var swiper = new Swiper(".reviews-slider", {

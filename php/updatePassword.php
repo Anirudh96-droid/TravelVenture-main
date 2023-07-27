@@ -5,9 +5,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $passwordOrg = $_POST['new_password'];
 
     $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "Travel";
+    $username = "travel";
+    $password = "travel";
+    $dbname = "travel";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
