@@ -74,7 +74,6 @@ $(document).ready(function() {
     var username = document.forms["registrationForm"]["username"].value;
     var cpassword = document.forms["registrationForm"]["cpassword"].value;
     var password = document.forms["registrationForm"]["password"].value;
-    alert(gender);
 
   
     document.getElementById("regnumberError").textContent = "";

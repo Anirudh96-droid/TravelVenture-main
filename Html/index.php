@@ -1,3 +1,19 @@
+<?php 
+    // Connect to the database
+	$host = "localhost";
+	$dbname = "travel";
+	$username_db = "travel";
+	$password_db = "travel";
+
+    $db = new PDO(
+        "mysql:host=$host;dbname=$dbname",
+        $username_db,
+        $password_db
+    );
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +43,12 @@
                 <li><a href="hotels.html">Hotels</a></li>
                 <li><a href="book.html">book</a></li>
                 <li><a href="about.html">about</a></li>
-                <li><a href="#" onclick="openDialogLogin()">Login</a></li>
-                <!--<li><a href="logout.php">Logout</a></li>-->
+                <?php if(!isset($_SESSION['USER_NAME'])){
+                    echo '<li><a href="#" onclick="openDialogLogin()">Login</a></li>';
+                }else{ ?>
+                    <li><a href="userinfo.html">Welcome <?php echo  $_SESSION['USER_NAME']?> </a></li>
+                    <li><a href="../php/logout.php">Logout</a></li>
+                <?php }?>
             </ul>
            
         </nav>

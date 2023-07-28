@@ -34,8 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 				echo '<script type="text/javascript">
 	window.onload = function () {
-		alert("successfull");
-		window.location.href = "../Html/index.html";
+		window.location.href = "../Html/index.php";
 	};
 </script>
 ';

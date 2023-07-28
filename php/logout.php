@@ -4,8 +4,7 @@ unset($_SESSION["USER_ID"]);
 unset($_SESSION["USER_NAME"]);
 echo '<script type="text/javascript">
 window.onload = function () {
-    alert("successfull logout");
-    window.location.href = "../Html/index.html";
+    window.location.href = "../Html/index.php";
 };
 </script>';
 die();

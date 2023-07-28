@@ -34,10 +34,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$stmt->bindParam(":username", $username);
 		$stmt->bindParam(":password", $hashed_password);
 		$stmt->execute();
-		echo "<h2>Registration Successful</h2>";
-		echo "Thank you for registering, " . $firstname . "!<br>";
-		echo "You'll be redirected to login page in 3 seconds";
-		header("refresh:3;url=../Html/login.html");
+		echo '<script type="text/javascript">
+		window.onload = function () {
+			alert("Registered Successfully");
+			window.location.href = "../Html/index.php";
+		};
+		</script>';
 	}
 	catch(PDOException $e) {
 		echo "Connection failed: " . $e->getMessage();
