@@ -523,3 +523,12 @@ h2 {
  text-decoration: none;
  cursor: pointer;
  }
+
+ /*Responsive */
+
+@media screen and (max-width: 500px) {
+  .form .mod-form-row{
+      flex-wrap: wrap;
+  }
+  
+}
