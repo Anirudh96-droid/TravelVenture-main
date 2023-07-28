@@ -36,6 +36,35 @@ var swiper = new Swiper(".home-slider", {
         dialogRegsiter.style.display = "block";
         dialogLogin.style.display = "none";
     }
+
+    // Close login dialog when clicking outside the dialog box
+document.addEventListener("click", function (event) {
+    if (event.target === dialogLogin) {
+        closeModal();
+    }
+});
+
+// Close registration dialog when clicking outside the dialog box
+window.onclick = function (event) {
+    if (event.target === dialogRegsiter) {
+        dialogRegsiter.style.display = "none";
+    }
+}
+
+// Close registration dialog when clicking on the close icon
+const closeBtnRe = document.getElementById("closeBtnRe");
+function closeModalRe() {
+    dialogRegsiter.style.display = "none";
+}
+closeBtnRe.addEventListener("click", closeModalRe);
+
+// Close Login dialog when clicking on the close icon
+const closeBtn = document.getElementById("closeBtn");
+function closeModal() {
+    dialogLogin.style.display = "none";
+}
+closeBtn.addEventListener("click", closeModal);
+
 $("document").ready(function() {
     // Swipe Animation
     var swipeContent = $('.swipe-content');
@@ -62,8 +91,10 @@ $("document").ready(function() {
     });
 });
 
+
+
 // Load more button 
-let loadMoreBtn = document.querySelector('.packages .load-more .btn');
+/*let loadMoreBtn = document.querySelector('.packages .load-more .btn');
 let currentItem = 3;
 
 loadMoreBtn.onclick = () =>{
@@ -75,40 +106,13 @@ loadMoreBtn.onclick = () =>{
    if(currentItem >= boxes.length){
       loadMoreBtn.style.display = 'none';
    }
-}
+}*/
 
     // Open login dialog
-    function openDialogLogin() {
+    /*function openDialogLogin() {
         document.getElementById("dialogLogin").style.display = "block";
-    }
+    }*/
 
-    // Close login dialog when clicking outside the dialog box
-    document.addEventListener("click", function(event) {
-        if (event.target === dialogLogin) {
-          closeModal();
-        }
-      });
-
-    // Close registration dialog when clicking outside the dialog box
-    window.onclick = function(event) {
-        if (event.target === dialogRegsiter) {
-            dialogRegsiter.style.display = "none";
-        }
-    }
-
-    // Close registration dialog when clicking on the close icon
-    const closeBtnRe = document.getElementById("closeBtnRe");
-    function closeModalRe() {
-        dialogRegsiter.style.display = "none";
-      }
-    closeBtnRe.addEventListener("click", closeModalRe);
-
-    // Close Login dialog when clicking on the close icon
-    const closeBtn = document.getElementById("closeBtn");
-    function closeModal() {
-        dialogLogin.style.display = "none";
-      }
-    closeBtn.addEventListener("click", closeModal);
 
 
     // reviews area script
@@ -129,3 +133,4 @@ loadMoreBtn.onclick = () =>{
            },
         },
      });
+
