@@ -1,3 +1,19 @@
+<?php 
+    // Connect to the database
+	$host = "localhost";
+	$dbname = "travel";
+	$username_db = "travel";
+	$password_db = "travel";
+
+    $db = new PDO(
+        "mysql:host=$host;dbname=$dbname",
+        $username_db,
+        $password_db
+    );
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,15 +31,20 @@
     <header>
         <nav class="navbar">
             <div class="navbar-brand">
-                <a class="logo" href="index.html">Travel Venture.</a>
+                <a class="logo" href="index.php">Travel Venture.</a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="package.html">Travel Packages</a></li>
-                <li><a href="hotels.html">Hotels</a></li>
-                <li><a href="book.html">book</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="#" onclick="openDialogLogin()">Login</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="package.php">Travel Packages</a></li>
+                <li><a href="hotels.php">Hotels</a></li>
+                <li><a href="book.php">book</a></li>
+                <li><a href="about.php">about</a></li>
+                <?php if(!isset($_SESSION['USER_NAME'])){
+                    echo '<li><a href="#" onclick="openDialogLogin()">Login</a></li>';
+                }else{ ?>
+                    <li><a href="userinfo.php">Welcome <?php echo  $_SESSION['USER_NAME']?> </a></li>
+                    <li><a href="../php/logout.php">Logout</a></li>
+                <?php }?>
             </ul>
            
         </nav>
