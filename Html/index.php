@@ -66,7 +66,7 @@
              <div class="content">
                 <span>explore, discover, travel</span>
                 <h3>travel around the world</h3>
-                <a href="package.html" class="btn">discover more</a>
+                <a href="package.php" class="btn">discover more</a>
              </div>
           </div>
  
@@ -74,7 +74,7 @@
              <div class="content">
                 <span>explore, discover, travel</span>
                 <h3>discover the new places</h3>
-                <a href="package.html" class="btn">discover more</a>
+                <a href="package.php" class="btn">discover more</a>
              </div>
           </div>
  
@@ -82,7 +82,7 @@
              <div class="content">
                 <span>explore, discover, travel</span>
                 <h3>make your tour worthwhile</h3>
-                <a href="package.html" class="btn">discover more</a>
+                <a href="package.php" class="btn">discover more</a>
              </div>
           </div>
           
@@ -108,7 +108,7 @@
                 <div class="content">
                     <h3>Spiritual &amp; Mindfullness</h3>
                     <p>Embark on a transformative journey with our Spiritual and Mindfulness packages. These carefully curated experiences are designed to nourish your soul, provide inner peace, and connect you with ancient traditions. Immerse yourself in serene landscapes, visit sacred temples and monasteries, and participate in meditation and yoga retreats. Whether you seek spiritual awakening, self-discovery, or simply a peaceful escape from the chaos of everyday life.</p>
-                    <a href="book.html" class="btn">book now</a>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
     
@@ -119,7 +119,7 @@
                 <div class="content">
                     <h3>adventure &amp; tour</h3>
                     <p>If you crave adrenaline-pumping experiences and epic adventures, our Adventure and Exploration packages are tailor-made for you. Embark on daring escapades, conquer towering peaks, navigate through rugged terrains, and engage in thrilling outdoor activities. Whether you're a seasoned adventurer or a beginner seeking an adrenaline rush, our packages offer heart-pounding experiences and the chance to push your limits and create lifelong memories.</p>
-                    <a href="book.html" class="btn">book now</a>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
     
@@ -130,13 +130,13 @@
                 <div class="content">
                     <h3>Nature &amp; wildlife</h3>
                     <p>For nature enthusiasts and wildlife lovers, our Nature and Wildlife packages bring you face-to-face with the wonders of the natural world. Explore diverse ecosystems, encounter fascinating wildlife, and marvel at the breathtaking beauty of national parks and reserves. From thrilling safaris to remote expeditions in untouched wilderness, these packages promise encounters with extraordinary creatures and the opportunity to immerse yourself in the untamed splendor of Mother Nature.</p>
-                    <a href="book.html" class="btn">book now</a>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
     
         </div>
     
-        <div class="load-more"> <a href="package.html" class="btn">load more</a> </div>
+        <div class="load-more"> <a href="package.php" class="btn">load more</a> </div>
         </div>
     </section>
 
@@ -151,7 +151,7 @@
     <div class="content">
        <h3>about us</h3>
        <p>Join us on a journey of discovery, and let Travel Venture be your trusted partner in curating unforgettable moments, connecting with diverse cultures, and immersing yourself in the wonders of the world. Embark on a voyage of a lifetime with us, and let your travel dreams come true.</p>
-       <a href="about.html" class="btn">read more about us</a>
+       <a href="about.php" class="btn">read more about us</a>
     </div>
  
  </section>
@@ -161,11 +161,11 @@
     <!-- Footer Section -->
     <footer style="justify-content: center;">
         <ul class="nav-links footer">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="package.html">Travel Packages</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="book.html">book</a></li>
-            <li><a href="about.html">about</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="package.php">Travel Packages</a></li>
+            <li><a href="hotels.php">Hotels</a></li>
+            <li><a href="book.php">book</a></li>
+            <li><a href="about.php">about</a></li>
 
         </ul>
     </footer>

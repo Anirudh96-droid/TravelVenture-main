@@ -115,11 +115,11 @@
        <!-- Footer Section -->
    <footer style="justify-content: center;">
         <ul class="nav-links footer">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="package.html">Travel Packages</a></li>
-            <li><a href="hotels.html">Hotels</a></li>
-            <li><a href="book.html">book</a></li>
-            <li><a href="about.html">about</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="package.php">Travel Packages</a></li>
+            <li><a href="hotels.php">Hotels</a></li>
+            <li><a href="book.php">book</a></li>
+            <li><a href="about.php">about</a></li>
         </ul>
     </footer>
 
