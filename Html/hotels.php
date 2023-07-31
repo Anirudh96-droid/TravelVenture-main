@@ -1,17 +1,4 @@
 <?php 
-    // Connect to the database
-	$host = "localhost";
-	$dbname = "travel";
-	$username_db = "travel";
-	$password_db = "travel";
-
-    $db = new PDO(
-        "mysql:host=$host;dbname=$dbname",
-        $username_db,
-        $password_db
-    );
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     session_start();
 ?>
 <!DOCTYPE html>
