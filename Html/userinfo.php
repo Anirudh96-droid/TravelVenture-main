@@ -38,7 +38,7 @@
                 <?php if(!isset($_SESSION['USER_NAME'])){
                     echo '<li><a href="#" onclick="openDialogLogin()">Login</a></li>';
                 }else{ ?>
-                    <li><a href="userinfo.html">Welcome <?php echo  $_SESSION['USER_NAME']?> </a></li>
+                    <li><a href="userinfo.php">Welcome <?php echo  $_SESSION['USER_NAME']?> </a></li>
                     <li><a href="../php/logout.php">Logout</a></li>
                 <?php }?>
             </ul>
@@ -49,11 +49,11 @@
       <!-- Footer Section -->
     <footer style="justify-content: center;">
       <ul class="nav-links footer">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="package.html">Travel Packages</a></li>
-          <li><a href="hotels.html">Hotels</a></li>
-          <li><a href="book.html">book</a></li>
-          <li><a href="about.html">about</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="package.php">Travel Packages</a></li>
+          <li><a href="hotels.php">Hotels</a></li>
+          <li><a href="book.php">book</a></li>
+          <li><a href="about.php">about</a></li>
 
       </ul>
   </footer>

@@ -62,7 +62,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -73,7 +73,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -84,7 +84,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -95,7 +95,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -106,7 +106,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -117,7 +117,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -128,7 +128,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -139,7 +139,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -150,7 +150,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -161,7 +161,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -172,7 +172,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -183,7 +183,7 @@
               <div class="content">
                  <h3>adventure & tour</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
-                 <a href="book.html" class="btn">book now</a>
+                 <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
@@ -196,11 +196,11 @@
       <!-- Footer Section -->
     <footer style="justify-content: center;">
       <ul class="nav-links footer">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="package.html">Travel Packages</a></li>
-          <li><a href="hotels.html">Hotels</a></li>
-          <li><a href="book.html">book</a></li>
-          <li><a href="about.html">about</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="package.php">Travel Packages</a></li>
+          <li><a href="hotels.php">Hotels</a></li>
+          <li><a href="book.php">book</a></li>
+          <li><a href="about.php">about</a></li>
 
       </ul>
   </footer>
