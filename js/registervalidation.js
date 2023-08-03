@@ -95,13 +95,13 @@ $(document).ready(function() {
       document.getElementById("genderError").textContent = "Gender is required";
       return false;
     }
-  
+
     // Username Validation
     if (username === "") {
       document.getElementById("usernameError").textContent = "Username is required";
       return false;
     } else if (username.length < 3) {
-        document.getElementById("firstNameError").textContent = "Username should have at least 3 characters";
+        document.getElementById("usernameError").textContent = "Username should have at least 3 characters";
         return false;
     }
 

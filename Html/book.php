@@ -92,7 +92,7 @@
                 </tr>
                 <tr>
                     <td class="form-group">
-                        <input type="submit" value="Submit">
+                        <button type="submit">Submit</button>
                     </td>
                 </tr>
             </table>
