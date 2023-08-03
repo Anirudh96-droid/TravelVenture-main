@@ -1,16 +1,6 @@
 body {
     font-family: Arial, sans-serif;
 }
-
-.form-container, h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
 h1{
     margin-top: 10%;
     margin-bottom: 20px;
@@ -35,19 +25,24 @@ input, .form-group select {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-.form-group input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-.form-group input[type="submit"]:hover {
-    background-color: #45a049;
-}
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.form-container, h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.booktitle{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-shadow: var(--text-shadow);
+
 }

@@ -34,13 +34,15 @@
                 <?php }?>
             </ul>
            
-        </nav>
+        </nav>booktitle
     </header>
     <!-- header section ends -->
     <div>
-        <h1>BOOK YOUR TRIP</h1>
-    </div>
+       <div class="heading" style="font-size: 6rem; background:url(../images/bookmytrip.jpg) no-repeat">
+    
+ </div>
     <div>
+    <h1 class="booktitle">Book Your Trip !</h1>
         <form action="" method="post" class="form-container">
             <table>
                 <tr class="form-row">
