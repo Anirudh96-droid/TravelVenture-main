@@ -33,7 +33,7 @@
                 <?php }?>
             </ul>
            
-        </nav>booktitle
+        </nav>
     </header>
     <!-- header section ends -->
     <div>
@@ -41,37 +41,54 @@
     
  </div>
     <div>
+    <?php
+    if(isset($_GET['message'])) {
+        echo '<div style="color: green; text-align: center; font-size: 35px;">' . $_GET['message'] . '</div>';
+    }
+    ?>
     <h1 class="booktitle">Book Your Trip !</h1>
-        <form action="" method="post" class="form-container">
+        <form action="../php/booking.php" method="post" class="form-container" id="book" onsubmit="return validateBookForm()">
             <table>
                 <tr class="form-row">
                     <td class="form-group">
                         <label for="fullName">Full Name:</label>
-                        <input type="text" id="fullName" name="fullName" required>
+                        <input type="text" id="fullName" name="fullName" >
+                        <span id="fullNameError" class="error"></span>
                     </td>
                     <td class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" >
+                        <span id="emailError" class="error"></span>
                     </td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-group">
                         <label for="phoneNumber">Phone Number:</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" >
+                        <span id="phoneNumberError" class="error"></span>
                     </td>
                     <td class="form-group">
                         <label for="address">Address:</label>
-                        <input type="text" id="address" name="address" required>
+                        <input type="text" id="address" name="address" >
+                        <span id="addressError" class="error"></span>
                     </td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-group">
                         <label for="destination">Destination:</label>
-                        <input type="text" id="destination" name="destination" required>
+                        <select name="destination" id="destination" >
+                            <option value="">--Please choose destination--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <span id="destinationError" class="error"></span>
                     </td>
                     <td class="form-group">
                         <label for="guests">Number of Guests:</label>
-                        <select name="guests" id="guests" required>
+                        <select name="guests" id="guests" >
                             <option value="">--Please choose an option--</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -79,16 +96,19 @@
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
+                        <span id="guestsError" class="error"></span>
                     </td>
                 </tr>
                 <tr class="form-row">
                     <td class="form-group">
                         <label for="startDate">Start Date:</label>
-                        <input type="date" id="startDate" name="startDate" required>
+                        <input type="date" id="startDate" name="startDate" >
+                        <span id="startDateError" class="error"></span>
                     </td>
                     <td class="form-group">
                         <label for="endDate">End Date:</label>
-                        <input type="date" id="endDate" name="endDate" required>
+                        <input type="date" id="endDate" name="endDate" >
+                        <span id="endDateError" class="error"></span>
                     </td>
                 </tr>
                 <tr>
@@ -235,5 +255,8 @@
         </div>
       </div>
     </div>
+    <!-- custom js file link  -->
+    <script src="../js/bookvalidation.js"></script>
+    <script src="../js/bookvalidation.js"></script>
 </body>
 </html>

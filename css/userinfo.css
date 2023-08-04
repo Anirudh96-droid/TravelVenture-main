@@ -116,7 +116,12 @@ input[type="submit"]:hover {
   display: block;
 }
 
+.formupdate.edit-mode .form-options{
+  display: flex;
+}
+
 .formupdate input,
+.formupdate .form-options,
 .formupdate .hide-on-view,
 .formupdate.edit-mode .profile-data {
   display: none;

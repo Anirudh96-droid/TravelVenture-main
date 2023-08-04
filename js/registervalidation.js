@@ -126,6 +126,7 @@ $(document).ready(function() {
     //check password and confirm password
     if(password != cpassword){
         document.getElementById("cpasswordError").textContent = "Passwords does not match";
+        return false;
     }
   
     return true;
