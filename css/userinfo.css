@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url("../images/myprofile.jpg");
+  background-image: url("../images/myprofile1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,10 +67,15 @@ input[type="submit"]:hover {
 
 .formupdate label {
   font-weight: bold;
+  font-size: 16px;
 }
 
 .d-flex {
   display: flex;
+}
+
+.d-flex a{
+  font-size: 15px;
 }
 
 .justify-content-between {
@@ -101,7 +106,7 @@ input[type="submit"]:hover {
 }
 
 .profile-data {
-  font-size: 13px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
