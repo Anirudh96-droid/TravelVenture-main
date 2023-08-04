@@ -60,19 +60,19 @@
                  <img src="../images/img-1.jpg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                 <h3>Premium 5N trip to Taj mahal and Delhi</h3>
+                 <p>1N Ahmedabad| 2N Delhi | 1N Old Delhi</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
            <div class="box">
               <div class="image">
-                 <img src="../images/img-2.jpg" alt="">
+                 <img src="../images/thailand.jpeg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                 <h3>Explore Amazing Phuket - Land only</h3>
+                 <p>5 N Phuket</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
@@ -82,8 +82,8 @@
                  <img src="../images/img-3.jpg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                 <h3>Serene Bali</h3>
+                 <p>5N | Experience a memorable vacation in the mystical land of Bali. Get an extra dose of thrill as you enjoy water sports at Tanjung Benoa Beach.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
@@ -93,19 +93,19 @@
                  <img src="../images/img-4.jpg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                 <h3>China </h3>
+                 <p>4 N | Plan a memorable trip to the great wall of china.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
            <div class="box">
               <div class="image">
-                 <img src="../images/img-5.jpg" alt="">
+                 <img src="../images/paris.jpg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                 <h3>Swiss Paris Delight</h3>
+                 <p>5 N | Bypass the long lines at the Eiffel Tower with this tour that includes summit access.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
@@ -115,8 +115,8 @@
                  <img src="../images/img-6.jpg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
+                 <h3>Best of Andaman - Standard</h3>
+                 <p>5 N | Kick-start your beach holidays in the Andamans with 5N stays at Port Blair, Havelock & Neil Island.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
@@ -126,7 +126,7 @@
                  <img src="../images/img-7.jpg" alt="">
               </div>
               <div class="content">
-                 <h3>adventure & tour</h3>
+                 <h3>Amsterdam Sw</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
