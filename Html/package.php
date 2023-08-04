@@ -21,6 +21,8 @@
    <!-- home css file link  -->
    <link rel="stylesheet" href="../css/home.css">
 
+
+
 </head>
 <body>
     <!-- Header Section -->
@@ -53,8 +55,8 @@
         <h1 class="heading-title">top destinations</h1>
      
         <div class="box-container">
-     
-           <div class="box">
+
+           <div class="box" id="card">
               <div class="image">
                  <img src="../images/img-1.jpg" alt="">
               </div>
@@ -64,6 +66,12 @@
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
+           <div class="popup" id="popup">
+                <div class="popup-content">
+                    <span class="close" id="close">&times;</span>
+                    <p>This is a popup!</p>
+                </div>
+            </div>
      
            <div class="box">
               <div class="image">

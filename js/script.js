@@ -65,6 +65,27 @@ function closeModal() {
 }
 closeBtn.addEventListener("click", closeModal);
 
+// package popup
+
+const card = document.getElementById('card');
+const popup = document.getElementById('popup');
+const close = document.getElementById('close');
+
+card.addEventListener('click', () => {
+    popup.style.display = 'block';
+});
+
+close.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+
+
 $("document").ready(function() {
     // Swipe Animation
     var swipeContent = $('.swipe-content');
