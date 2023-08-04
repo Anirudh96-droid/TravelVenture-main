@@ -32,7 +32,6 @@
             <ul class="nav-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="package.php">Travel Packages</a></li>
-                <li><a href="hotels.php">Hotels</a></li>
                 <li><a href="book.php">book</a></li>
                 <li><a href="about.php">about</a></li>
                 <?php if(!isset($_SESSION['USER_NAME'])){
@@ -196,7 +195,6 @@
       <ul class="nav-links footer">
           <li><a href="index.php">Home</a></li>
           <li><a href="package.php">Travel Packages</a></li>
-          <li><a href="hotels.php">Hotels</a></li>
           <li><a href="book.php">book</a></li>
           <li><a href="about.php">about</a></li>
 

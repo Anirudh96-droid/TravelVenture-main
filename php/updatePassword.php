@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Execute the prepared statement
     if ($stmt->execute()) {
         if ($stmt->affected_rows > 0) {
-            echo "Record updated successfully";
+            header("Location: ../Html/index.php");
         } else {
             echo "No records updated";
         }
