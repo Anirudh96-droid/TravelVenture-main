@@ -74,24 +74,38 @@
         </nav>
     </header>
     <div class="container">
-        <h2>User Info</h2>
-        <form method="post" id="registrationForm" class ="formupdate" action="../php/user.php?id=<?php echo $user_id; ?>">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>My Profile</h2>
+            <button type="button" class="btn-edit">
+                <span class="edit-label">
+                    <i class="fas fa-edit"></i>Edit
+                </span>
+                <span class="cancel-label d-none">Cancel</span>
+            </button>
+        </div>
+        <form method="post" id="updateForm" class ="formupdate esdit-mode" action="../php/user.php?id=<?php echo $user_id; ?>">
             <label for="firstname">Firstname:</label>
+            <div class="profile-data"><?php echo $user['firstname']?></div>
             <input type="text" name="firstname" id="firstname" value="<?php echo isset($user['firstname']) ? $user['firstname'] : ''; ?>">
-            <span id="firstnameError" class="error"></span><br>
+            <span id="firstnameError" class="error"></span>
             <label for="lastname">Lastname:</label>
+            <div class="profile-data"><?php echo $user['lastname']?></div>
             <input type="text" name="lastname" id="lastname" value="<?php echo isset($user['lastname']) ? $user['lastname'] : ''; ?>">
-            <span id="lastnameError" class="error"></span><br>
+            <span id="lastnameError" class="error"></span>
             <label for="email">Email:</label>
+            <div class="profile-data"><?php echo $user['email']?></div>
             <input type="email" name="email" id="email" value="<?php echo isset($user['email']) ? $user['email'] : ''; ?>">
-            <span id="emailError" class="error"></span><br>
+            <span id="emailError" class="error"></span>
             <label for="regnumber">Phone Number:</label>
+            <div class="profile-data"><?php echo $user['phone_number']?></div>
             <input type="tel" name="regnumber" id="regnumber" value="<?php echo isset($user['phone_number']) ? $user['phone_number'] : ''; ?>">
-            <span id="regnumberError" class="error"></span><br>
+            <span id="regnumberError" class="error"></span>
             <label for="age">Age:</label>
+            <div class="profile-data"><?php echo $user['age']?></div>
             <input type="number" name="age" id="age" value="<?php echo isset($user['age']) ? $user['age'] : ''; ?>">
-            <span id="ageError" class="error"></span><br>
+            <span id="ageError" class="error"></span>
             <label for="gender">Gender :</label>
+            <div class="profile-data"><?php echo $user['gender']?></div> 
             <div class="form-options">
                 <label for="gendermale">Male</label>
                 <input type="radio" id="gendermale" name="gender" value="male" <?php echo ($user['gender'] === 'male') ? 'checked' : ''; ?>>
@@ -99,17 +113,18 @@
                 <input type="radio" id="genderfemale" name="gender" value="female" <?php echo ($user['gender'] === 'female') ? 'checked' : ''; ?>>
                 <label for="genderother">Other</label>
                 <input type="radio" id="genderother" name="gender" value="other" <?php echo ($user['gender'] === 'other') ? 'checked' : ''; ?>>
-                <span id="genderError" class="error"></span><br>
+                <span id="genderError" class="error"></span>
             </div>
             <label for="username">Username:</label>
+            <div class="profile-data"><?php echo $user['username']?></div>
             <input type="text" name="username" id="username" value="<?php echo isset($user['username']) ? $user['username'] : ''; ?>">
-            <span id="usernameError" class="error"></span><br>
-            <div class="d-flex">
+            <span id="usernameError" class="error"></span>
+            <div class="d-flex hide-on-view">
                 <a href="changePassword.html">Change Password ?</a>
             </div>
             
-            <div class="form-group">
-                <button type="submit">Register</button>
+            <div class="form-group hide-on-view">
+                <button type="submit" >save</button>
             </div>
         </form>
     </div>
@@ -134,13 +149,25 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <!-- swiper js link  -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="../js/registervalidation.js"></script>
+    <script src="../js/updatevalidation.js"></script>
 
  
  <script>
         function enableInput(fieldName) {
             document.getElementsByName(fieldName).removeAttribute("disabled");
         }
+        document.addEventListener("DOMContentLoaded", function () {
+            const editButton = document.querySelector(".btn-edit");
+            const editLabel = document.querySelector(".edit-label");
+            const cancelLabel = document.querySelector(".cancel-label");
+            const form = document.getElementById("updateForm");
+
+            editButton.addEventListener("click", function () {
+                form.classList.toggle("edit-mode");
+                editLabel.classList.toggle('d-none')
+                cancelLabel.classList.toggle('d-none')
+            });
+        });
     </script>
 </body>
 
