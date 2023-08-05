@@ -80,7 +80,49 @@
     </div>
  
  </section>
+<!-- services section starts  -->
 
+<section class="services">
+
+   <h1 class="heading-title"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="..//images/icon-1.png" alt="">
+         <h3>adventure</h3>
+      </div>
+
+      <div class="box">
+         <img src="..//images/icon-2.png" alt="">
+         <h3>tour guide</h3>
+      </div>
+
+      <div class="box">
+         <img src="..//images/icon-3.png" alt="">
+         <h3>trekking</h3>
+      </div>
+
+      <div class="box">
+         <img src="..//images/icon-4.png" alt="">
+         <h3>camp fire</h3>
+      </div>
+
+      <div class="box">
+         <img src="..//images/icon-5.png" alt="">
+         <h3>off road</h3>
+      </div>
+
+      <div class="box">
+         <img src="..//images/icon-6.png" alt="">
+         <h3>camping</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
 
     <!-- Home Page -->
 
@@ -111,7 +153,7 @@
     
             <div class="box">
                 <div class="image">
-                    <img src="..//images/img-3.jpg" alt="">
+                    <img src="..//images/img-8.jpg" alt="">
                 </div>
                 <div class="content">
                     <h3>Nature &amp; wildlife</h3>
@@ -125,6 +167,22 @@
         <div class="load-more"> <a href="package.php" class="btn">load more</a> </div>
         </div>
     </section>
+
+     <!-- home offer section starts  -->
+
+<section class="home-offer">
+   <div class="content">
+      <h2>Special Offer! upto 50% off</h2>
+    <h2>Sign up and share this tour with your friends. If your friends make their first booking with us, you and your friends both get a 10% discount on your next booking!</h2>
+    <?php if($_SESSION['USER_NAME']) { 
+        echo '<a href="book.php" class="btn">Book Now</a>';
+    }else{
+        echo '<a  style="" href="#" onclick="openDialogRegsiter()" class="btn">Sign Up</a>';
+    }?>
+   </div>
+</section>
+
+<!-- home offer section ends -->
 
     <!-- home about section starts  -->
 
@@ -143,6 +201,8 @@
  </section>
  
  <!-- home about section ends -->
+
+
         
     <!-- Footer Section -->
     <footer style="justify-content: center;">
@@ -156,7 +216,7 @@
     </footer>
 
     <!-- Login -->
-    <div id="dialogLogin" class="dialog-box">
+        <div id="dialogLogin" class="dialog-box">
         <div class="dialog-content">
             <div class="container">
                 <div class="d-flex justify-content-end close-btn">

@@ -8,7 +8,41 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>package</title>
-
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
    <!-- swiper css link  -->
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
@@ -60,6 +94,7 @@
               </div>
               <div class="content">
                  <h3>Premium 5N trip to Taj mahal and Delhi</h3>
+                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>1N Ahmedabad| 2N Delhi | 1N Old Delhi</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
@@ -71,6 +106,7 @@
               </div>
               <div class="content">
                  <h3>Explore Amazing Phuket - Land only</h3>
+                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>5 N Phuket</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
@@ -82,6 +118,7 @@
               </div>
               <div class="content">
                  <h3>Serene Bali</h3>
+                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>5N | Experience a memorable vacation in the mystical land of Bali. Get an extra dose of thrill as you enjoy water sports at Tanjung Benoa Beach.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
@@ -93,6 +130,7 @@
               </div>
               <div class="content">
                  <h3>China </h3>
+                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>4 N | Plan a memorable trip to the great wall of china.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
@@ -104,6 +142,7 @@
               </div>
               <div class="content">
                  <h3>Swiss Paris Delight</h3>
+                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>5 N | Bypass the long lines at the Eiffel Tower with this tour that includes summit access.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
@@ -115,16 +154,17 @@
               </div>
               <div class="content">
                  <h3>Best of Andaman - Standard</h3>
+                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>5 N | Kick-start your beach holidays in the Andamans with 5N stays at Port Blair, Havelock & Neil Island.</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
            </div>
      
-           <div class="box">
+           <!-- <div class="box">
               <div class="image">
                  <img src="../images/img-7.jpg" alt="">
-              </div>
-              <div class="content">
+              </div> -->
+              <!-- <div class="content">
                  <h3>Amsterdam Sw</h3>
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
                  <a href="book.php" class="btn">book now</a>
@@ -184,7 +224,7 @@
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, perspiciatis!</p>
                  <a href="book.php" class="btn">book now</a>
               </div>
-           </div>
+           </div> -->
      
         </div>
      

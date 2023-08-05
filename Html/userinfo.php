@@ -72,7 +72,7 @@
            
         </nav>
     </header>
-    <div class="container">
+    <div class="container" style="height:530px;">
         <div class="d-flex justify-content-between align-items-center">
             <h2>My Profile</h2>
             <button type="button" class="btn-edit">

@@ -10,6 +10,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/book.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#start_date" ).datepicker();
+    $( "#end_date" ).datepicker();
+  } );
+  </script>
     <link rel="stylesheet"  type="text/css" href="../css/home.css">
     <title>Bookings</title>
 </head>
@@ -101,13 +111,11 @@
                 </tr>
                 <tr class="form-row">
                     <td class="form-group">
-                        <label for="startDate">Start Date:</label>
-                        <input type="date" id="startDate" name="startDate" >
+                        <p>Start Date: <input type="text" id="start_date" name="startDate"></p>
                         <span id="startDateError" class="error"></span>
                     </td>
                     <td class="form-group">
-                        <label for="endDate">End Date:</label>
-                        <input type="date" id="endDate" name="endDate" >
+                        <p>End Date: <input type="text" id="end_date" name="endDate"></p>
                         <span id="endDateError" class="error"></span>
                     </td>
                 </tr>
