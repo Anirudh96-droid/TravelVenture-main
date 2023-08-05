@@ -6,8 +6,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$address = $_POST["address"];
 	$destination = $_POST["destination"];
 	$guests = $_POST["guests"];
-	$startDate = $_POST["startDate"];
-    $endDate = $_POST["endDate"];
+	$startDate = date("Y-m-d", strtotime($_POST["startDate"]));
+    $endDate = date("Y-m-d", strtotime($_POST["endDate"]));
+	$totalprice = $_POST["totalprice"];
 
 
 	$host = "localhost";
@@ -19,11 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		"mysql:host=$host;dbname=$dbname",
 			$username_db, $password_db);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		print_r($startDate);exit;
 		// Insert the user into the database
 		$stmt = $db->prepare(
-		"INSERT INTO TravelDetails (full_name,email,phone_number,address,destination,guests, start_date,end_date)
-			VALUES (:full_name,:email,:phone_number,:address,:destination, :guests,:start_date,:end_date)");
+		"INSERT INTO TravelDetails (full_name,email,phone_number,address,destination,guests, start_date,end_date,totalprice)
+			VALUES (:full_name,:email,:phone_number,:address,:destination, :guests,:start_date,:end_date,:totalprice)");
 		$stmt->bindParam(":full_name", $fullName);
 		$stmt->bindParam(":email", $email);
 		$stmt->bindParam(":phone_number", $phoneNumber);
@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$stmt->bindParam(":guests", $guests);
 		$stmt->bindParam(":start_date", $startDate);
         $stmt->bindParam(":end_date", $endDate);
+		$stmt->bindParam(":totalprice", $totalprice);
 		$stmt->execute();
         $message = "your booking Confirmed!";
         header("Location: ../Html/book.php?message=" . urlencode($message));

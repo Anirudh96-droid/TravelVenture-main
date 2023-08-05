@@ -98,7 +98,7 @@
                  <h3>Premium 5N trip to Taj mahal and Delhi</h3>
                  <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>1N Ahmedabad| 2N Delhi | 1N Old Delhi</p>
-                 <a href="book.php" class="btn">book now</a>
+                 <a href="book.php?price= 1000" class="btn">book now</a>
               </div>
            </div>
            <div class="popup" id="popup">

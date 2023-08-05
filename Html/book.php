@@ -99,8 +99,7 @@
                     <td class="form-group">
                         <label for="guests">Number of Guests:</label>
                         <select name="guests" id="guests" >
-                            <option value="">--Please choose an option--</option>
-                            <option value="1">1</option>
+                            <option value="1" id="selected">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
@@ -117,6 +116,14 @@
                     <td class="form-group">
                         <p>End Date: <input type="text" id="end_date" name="endDate"></p>
                         <span id="endDateError" class="error"></span>
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <td class="form-group">
+                        <input type="text" id="totalprice1" name="totalprice1" disabled>
+                        <input type="text" id="totalprice" name="totalprice" style="display:none;">
+                    </td>
+                    <td class="form-group">
                     </td>
                 </tr>
                 <tr>
@@ -266,5 +273,31 @@
     <!-- custom js file link  -->
     <script src="../js/bookvalidation.js"></script>
     <script src="../js/bookvalidation.js"></script>
+    <script>
+        // Get the value from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const value = urlParams.get('price');
+
+        // Get the dropdown element
+        const dropdown = document.getElementById('guests');
+
+        // Get the selected value when the page loads
+        const selectedValue = dropdown.value;
+        const selectedValueElement = document.getElementById('selected');
+        selectedValueElement.textContent = selectedValue;
+        var tprice = value*selectedValue;
+        document.getElementById('totalprice1').value = tprice;
+        document.getElementById('totalprice').value = tprice;
+
+        // Add a change event listener to the dropdown
+        dropdown.addEventListener('change', function() {
+        // Get the selected value when the dropdown changes
+        const selectedValue = dropdown.value;
+        selectedValueElement.textContent = selectedValue;
+        var tprice = value*selectedValue;
+        document.getElementById('totalprice1').value = tprice;
+        document.getElementById('totalprice').value = tprice;
+        });
+    </script>
 </body>
 </html>

@@ -33,18 +33,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				$_SESSION['USER_NAME']= $user['username'];
 
 				echo '<script type="text/javascript">
-	window.onload = function () {
-		window.location.href = "../Html/index.php";
-	};
-</script>
-';
+				window.onload = function () {
+				window.location.href = "../Html/index.php";
+				};
+				</script>
+				';
 			} else {
-				echo "<h2>Login Failed</h2>";
-				echo "Invalid password.";
+				echo '<script type="text/javascript">
+				window.onload = function () {
+					alert("Login Failed,Invalid password.");
+					window.location.href = "../Html/index.php";
+				};
+				</script>';
 			}
 		} else {
 			echo "<h2>Login Failed</h2>";
 			echo "User doesn't exist";
+			echo '<script type="text/javascript">
+			window.onload = function () {
+				alert("Login Failed,User doesn\'t exist.");
+				window.location.href = "../Html/index.php";
+			};
+			</script>';
 		}
 	} catch (PDOException $e) {
 		echo "Connection failed: " . $e->getMessage();
