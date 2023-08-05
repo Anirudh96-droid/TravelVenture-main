@@ -95,8 +95,8 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
              </div>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-             <h3>john deo</h3>
+             <p>I recently had the pleasure of experiencing the "Swiss Paris Delight" tour, and it truly exceeded all my expectations. From the moment I arrived in Switzerland to the captivating days spent in Paris, every aspect of the journey was meticulously planned and flawlessly executed.</p>
+             <h3>Murali Meruga</h3>
              <span>traveler</span>
              <img src="../images/pic-1.png" alt="">
           </div>
@@ -108,8 +108,8 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
              </div>
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus repellendus et suscipit optio similique totam aut laborum ullam sequi! In!</p>
-             <h3>john deo</h3>
+             <p>My "Taj Mahal Delight" tour was an unforgettable and soul-stirring experience. The Taj Mahal has always been on my bucket list, and this tour allowed me to witness its awe-inspiring beauty in person.</p>
+             <h3>Reshma K</h3>
              <span>traveler</span>
              <img src="../images/pic-2.png" alt="">
           </div>
@@ -120,8 +120,8 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
              </div>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim deserunt, ab at ea iste odio placeat doloribus eum dolores tempore obcaecati, dolore esse aperiam. Excepturi ad quo distinctio, dignissimos voluptate, dolores, saepe animi eum atque sint esse ab exercitationem!</p>
-             <h3>john deo</h3>
+             <p>As a hardcore traveler, I've explored numerous destinations, but my recent "Bali" tour was an absolute standout among all my adventures. Bali is a mesmerizing island that offers an intoxicating blend of natural beauty, vibrant culture, and thrilling experiences.</p>
+             <h3>Anirudh</h3>
              <span>traveler</span>
              <img src="../images/pic-3.png" alt="">
           </div>
@@ -134,35 +134,10 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
              </div>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae cum quibusdam odio dignissimos nemo?</p>
-             <h3>john deo</h3>
+             <p>My "China" tour was a whirlwind of enchantment and fascination, showcasing the vast diversity and rich heritage of this remarkable country. From the ancient wonders to modern marvels, every moment of the trip left me in awe.</p>
+             <h3>Ravleen Kaur</h3>
              <span>traveler</span>
              <img src="../images/pic-4.png" alt="">
-          </div>
- 
-          <div class="swiper-slide slide">
-             <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-             </div>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-             <h3>john deo</h3>
-             <span>traveler</span>
-             <img src="../images/pic-5.png" alt="">
-          </div>
- 
-          <div class="swiper-slide slide">
-             <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-             </div>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-             <h3>john deo</h3>
-             <span>traveler</span>
-             <img src="../images/pic-6.png" alt="">
           </div>
  
        </div>
@@ -170,16 +145,52 @@
     </div>
  
  </section>
-   <!-- Footer Section -->
-   <footer style="justify-content: center;">
-      <ul class="nav-links footer">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="package.php">Travel Packages</a></li>
-          <li><a href="book.php">book</a></li>
-          <li><a href="about.php">about</a></li>
+  <!-- footer section starts  -->
 
-      </ul>
-  </footer>
+  <section class="footer">
+
+<div class="box-container">
+
+   <div class="box">
+      <h3>quick links</h3>
+      <a href="index.php"> <i class="fas fa-angle-right"></i> Home</a>
+      <a href="package.php"> <i class="fas fa-angle-right"></i> Travel package</a>
+      <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
+      <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+
+   </div>
+
+   <div class="box">
+      <h3>extra links</h3>
+      <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+      <a href="about.php"> <i class="fas fa-angle-right"></i> about us</a>
+      <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+      <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+   </div>
+
+   <div class="box">
+      <h3>contact info</h3>
+      <a href="#"> <i class="fas fa-phone"></i> +143-456-7890 </a>
+      <a href="#"> <i class="fas fa-phone"></i> +112-202-4333 </a>
+      <a href="#"> <i class="fas fa-envelope"></i> travelventure@gmail.com </a>
+      <a href="#"> <i class="fas fa-map"></i> Toronto, Canada - M1S 5Y8 </a>
+   </div>
+
+   <div class="box">
+      <h3>follow us</h3>
+      <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+      <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+      <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+      <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+   </div>
+
+</div>
+
+<div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
  
    <!-- Login -->
    <div id="dialogLogin" class="dialog-box">

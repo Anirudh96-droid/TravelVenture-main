@@ -129,16 +129,52 @@
     </div>
 
     
-      <!-- Footer Section -->
-    <footer style="justify-content: center;">
-      <ul class="nav-links footer">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="package.php">Travel Packages</a></li>
-          <li><a href="book.php">book</a></li>
-          <li><a href="about.php">about</a></li>
+        <!-- footer section starts  -->
 
-      </ul>
-  </footer>
+<section class="footer">
+
+<div class="box-container">
+
+   <div class="box">
+      <h3>quick links</h3>
+      <a href="index.php"> <i class="fas fa-angle-right"></i> Home</a>
+      <a href="package.php"> <i class="fas fa-angle-right"></i> Travel package</a>
+      <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
+      <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+
+   </div>
+
+   <div class="box">
+      <h3>extra links</h3>
+      <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+      <a href="about.php"> <i class="fas fa-angle-right"></i> about us</a>
+      <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+      <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+   </div>
+
+   <div class="box">
+      <h3>contact info</h3>
+      <a href="#"> <i class="fas fa-phone"></i> +143-456-7890 </a>
+      <a href="#"> <i class="fas fa-phone"></i> +112-202-4333 </a>
+      <a href="#"> <i class="fas fa-envelope"></i> travelventure@gmail.com </a>
+      <a href="#"> <i class="fas fa-map"></i> Toronto, Canada - M1S 5Y8 </a>
+   </div>
+
+   <div class="box">
+      <h3>follow us</h3>
+      <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+      <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+      <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+      <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+   </div>
+
+</div>
+
+<div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
 
 
   
