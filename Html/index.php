@@ -48,7 +48,7 @@
  
        <div class="swiper-wrapper">
  
-          <div class="swiper-slide slide" style="background:url(../images/home-slide-1.jpg) no-repeat">
+          <div class="swiper-slide slide" style="background:url(../images/home-slide-2.jpg) no-repeat">
              <div class="content">
                 <span>explore, discover, travel</span>
                 <h3>travel around the world</h3>
@@ -56,7 +56,7 @@
              </div>
           </div>
  
-          <div class="swiper-slide slide" style="background:url(../images/home-slide-2.jpg) no-repeat">
+          <div class="swiper-slide slide" style="background:url(../images/home-slide-1.jpg) no-repeat">
              <div class="content">
                 <span>explore, discover, travel</span>
                 <h3>discover the new places</h3>

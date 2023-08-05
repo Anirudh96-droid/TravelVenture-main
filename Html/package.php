@@ -96,27 +96,31 @@
               </div>
               <div class="content">
                  <h3>Premium 5N trip to Taj mahal and Delhi</h3>
-                 <h2 style="color:red;">Price: 1000 CAD<h2>
-                 <p>1N Ahmedabad| 2N Delhi | 1N Old Delhi</p>
-                 <a href="book.php?price= 1000" class="btn">book now</a>
+                 <p>1N Ahmedabad| 2N Delhi | 1N Old Delhi | This 5-night tour takes you on a captivating adventure through some of India's most iconic destinations.</p>
+                 <a href="book.php?price= 2000" class="btn">$2000</a>
               </div>
            </div>
            <div class="popup" id="popup">
                 <div class="popup-content">
                     <span class="close" id="close">&times;</span>
-                    <p>This is a popup!</p>
+                    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Swiss Paris Delight Itinerary</h2>
+    <p><b>Duration:</b> 5 nights</p>
+    <p><b>Highlights:</b> Bypass long lines at the Eiffel Tower with summit access.</p>
+    <p><b>Price:</b> $1000</p>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
                 </div>
             </div>
      
-           <div class="box">
+            <div class="box">
               <div class="image">
                  <img src="../images/thailand.jpeg" alt="">
               </div>
               <div class="content">
                  <h3>Explore Amazing Phuket - Land only</h3>
-                 <h2 style="color:red;">Price: 1000 CAD<h2>
-                 <p>5 N Phuket</p>
-                 <a href="book.php" class="btn">book now</a>
+                 <p>5 N Phuket | Discover the magic of Phuket's pristine beaches,white sands meet crystal-clear turquoise waters, creating an idyllic setting for relaxation and rejuvenation.</p>
+                 <a href="book.php" class="btn">$3200</a>
               </div>
            </div>
      
@@ -126,9 +130,8 @@
               </div>
               <div class="content">
                  <h3>Serene Bali</h3>
-                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>5N | Experience a memorable vacation in the mystical land of Bali. Get an extra dose of thrill as you enjoy water sports at Tanjung Benoa Beach.</p>
-                 <a href="book.php" class="btn">book now</a>
+                 <a href="book.php" class="btn">$4000</a>
               </div>
            </div>
      
@@ -138,9 +141,8 @@
               </div>
               <div class="content">
                  <h3>China </h3>
-                 <h2 style="color:red;">Price: 1000 CAD<h2>
-                 <p>4 N | Plan a memorable trip to the great wall of china.</p>
-                 <a href="book.php" class="btn">book now</a>
+                 <p>4 N | Discover the wonders of China with this mesmerizing 4-night tour, offering an unforgettable experience centered around a visit to the iconic Great Wall</p>
+                 <a href="book.php" class="btn">$4000</a>
               </div>
            </div>
      
@@ -150,9 +152,8 @@
               </div>
               <div class="content">
                  <h3>Swiss Paris Delight</h3>
-                 <h2 style="color:red;">Price: 1000 CAD<h2>
-                 <p>5 N | Bypass the long lines at the Eiffel Tower with this tour that includes summit access.</p>
-                 <a href="book.php" class="btn">book now</a>
+                 <p>5 N | Embark on an enchanting 5-night journey to two of Europe's most captivating destinations - Switzerland and Paris. </p>
+                 <a href="book.php" class="btn">$3500</a>
               </div>
            </div>
      
@@ -162,9 +163,8 @@
               </div>
               <div class="content">
                  <h3>Best of Andaman - Standard</h3>
-                 <h2 style="color:red;">Price: 1000 CAD<h2>
                  <p>5 N | Kick-start your beach holidays in the Andamans with 5N stays at Port Blair, Havelock & Neil Island.</p>
-                 <a href="book.php" class="btn">book now</a>
+                 <a href="book.php" class="btn">$3800</a>
               </div>
            </div>
      
