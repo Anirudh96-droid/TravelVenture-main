@@ -5,7 +5,7 @@
     var email = document.forms["book"]["email"].value;
     var phoneNumber = document.forms["book"]["phoneNumber"].value;
     var address = document.forms["book"]["address"].value;
-    var destination = document.forms["book"]["destination"].value;
+    //var destination = document.forms["book"]["destination"].value;
     var guests = document.forms["book"]["guests"].value;
     var startDate = document.forms["book"]["startDate"].value;
     var endDate = document.forms["book"]["endDate"].value;
@@ -16,7 +16,7 @@
     document.getElementById("emailError").textContent = "";
     document.getElementById("phoneNumberError").textContent = "";
     document.getElementById("addressError").textContent = "";
-    document.getElementById("destinationError").textContent = "";
+    //document.getElementById("destinationError").textContent = "";
     document.getElementById("guestsError").textContent = "";
     document.getElementById("startDateError").textContent = "";
     document.getElementById("endDateError").textContent = "";
@@ -54,10 +54,10 @@
     }
   
     // Destination Validation
-    if (destination === "") {
+    /*if (destination === "") {
       document.getElementById("destinationError").textContent = "Destination is required";
       return false;
-    }
+    }*/
 
     // Guest Validation
     if (guests === "") {

@@ -60,7 +60,7 @@
             <ul class="nav-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="package.php">Travel Packages</a></li>
-                <li><a href="book.php">book</a></li>
+                <!--<li><a href="book.php">book</a></li>-->
                 <li><a href="about.php">about</a></li>
                 <?php if(!isset($_SESSION['USER_NAME'])){
                     echo '<li><a href="#" onclick="openDialogLogin()">Login</a></li>';
@@ -139,7 +139,7 @@
       <h3>quick links</h3>
       <a href="index.php"> <i class="fas fa-angle-right"></i> Home</a>
       <a href="package.php"> <i class="fas fa-angle-right"></i> Travel package</a>
-      <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
+      <!--<a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>-->
       <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
 
    </div>

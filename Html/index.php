@@ -27,7 +27,7 @@
             <ul class="nav-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="package.php">Travel Packages</a></li>
-                <li><a href="book.php">book</a></li>
+                <!-- <li><a href="book.php">book</a></li>-->
                 <li><a href="about.php">about</a></li>
                 <?php if(!isset($_SESSION['USER_NAME'])){
                     echo '<li><a href="#" onclick="openDialogLogin()">Login</a></li>';
@@ -174,10 +174,10 @@
    <div class="content">
       <h2>Special Offer! upto 50% off</h2>
     <h2>Sign up and share this tour with your friends. If your friends make their first booking with us, you and your friends both get a 10% discount on your next booking!</h2>
-    <?php if($_SESSION['USER_NAME']) { 
+    <?php if(isset($_SESSION['USER_NAME'])) { 
         echo '<a href="book.php" class="btn">Book Now</a>';
     }else{
-        echo '<a  style="" href="#" onclick="openDialogRegsiter()" class="btn">Sign Up</a>';
+        echo '<a style="" href="#" onclick="openDialogRegsiter()" class="btn">Sign Up</a>';
     }?>
    </div>
 </section>
@@ -225,7 +225,7 @@
       <h3>quick links</h3>
       <a href="index.php"> <i class="fas fa-angle-right"></i> Home</a>
       <a href="package.php"> <i class="fas fa-angle-right"></i> Travel package</a>
-      <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
+      <!--<a href="book.php"> <i class="fas fa-angle-right"></i> Book</a> -->
       <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
 
    </div>

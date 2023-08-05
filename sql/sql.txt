@@ -21,6 +21,6 @@ CREATE TABLE TravelDetails (
     guests INT NOT NULL,
     start_date DATE NOT NULL,
     end_date DATE NOT NULL,
-    ADD totalprice DECIMAL(10, 2)
+    totalprice DECIMAL(10, 2)
 );
 

@@ -33,7 +33,7 @@
             <ul class="nav-links">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="package.php">Travel Packages</a></li>
-                <li><a href="book.php">book</a></li>
+                <!--<li><a href="book.php">book</a></li>-->
                 <li><a href="about.php">about</a></li>
                 <?php if(!isset($_SESSION['USER_NAME'])){
                     echo '<li><a href="#" onclick="openDialogLogin()">Login</a></li>';
@@ -86,15 +86,8 @@
                 <tr class="form-row">
                     <td class="form-group">
                         <label for="destination">Destination:</label>
-                        <select name="destination" id="destination" >
-                            <option value="">--Please choose destination--</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        <span id="destinationError" class="error"></span>
+                        <input type="text" id="destination1" name="destination1" disabled>
+                        <input type="text" id="destination" name="destination" style="display:none;">
                     </td>
                     <td class="form-group">
                         <label for="guests">Number of Guests:</label>
@@ -145,9 +138,8 @@
       <h3>quick links</h3>
       <a href="index.php"> <i class="fas fa-angle-right"></i> Home</a>
       <a href="package.php"> <i class="fas fa-angle-right"></i> Travel package</a>
-      <a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>
+      <!--<a href="book.php"> <i class="fas fa-angle-right"></i> Book</a>-->
       <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-
    </div>
 
    <div class="box">
@@ -314,6 +306,9 @@
         // Get the value from the URL query parameter
         const urlParams = new URLSearchParams(window.location.search);
         const value = urlParams.get('price');
+        const destination = urlParams.get('place');
+        document.getElementById('destination1').value = destination;
+        document.getElementById('destination').value = destination;
 
         // Get the dropdown element
         const dropdown = document.getElementById('guests');
