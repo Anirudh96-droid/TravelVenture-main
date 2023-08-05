@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		"mysql:host=$host;dbname=$dbname",
 			$username_db, $password_db);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
+		print_r($startDate);exit;
 		// Insert the user into the database
 		$stmt = $db->prepare(
 		"INSERT INTO TravelDetails (full_name,email,phone_number,address,destination,guests, start_date,end_date)
