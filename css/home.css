@@ -461,6 +461,10 @@ footer ul li a {
        border-radius: 5px;
        text-align: center;
        position: relative;
+       margin: auto !important;
+       width: fit-content;
+       max-width: 400px;
+       top:50%;
    }
 
    .close {

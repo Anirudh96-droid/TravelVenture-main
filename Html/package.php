@@ -103,14 +103,15 @@
         </div>
            <div class="popup" id="popup">
                 <div class="popup-content">
-                    <span class="close" id="close">&times;</span>
-                    <span class="close" onclick="closePopup()">&times;</span>
-                    <h2>Swiss Paris Delight Itinerary</h2>
-                    <p><b>Duration:</b> 5 nights</p>
-                    <p><b>Highlights:</b> Bypass long lines at the Eiffel Tower with summit access.</p>
-                    <p><b>Price:</b> $1000</p>
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <div class="popup-container">
+                        <span class="close" id="close">&times;</span>
+                        <h2>Swiss Paris Delight Itinerary</h2>
+                        <p><b>Duration:</b> 5 nights</p>
+                        <p><b>Highlights:</b> Bypass long lines at the Eiffel Tower with summit access.</p>
+                        <p><b>Price:</b> $1000</p>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
                 </div>
             </div>
             
