@@ -71,8 +71,8 @@ section{
  .btn{
     display: inline-block;
     background: var(--black);
-    margin-top: 20px;
-    margin-left: 100px;
+    margin-bottom: auto;
+    margin-left: 110px;
     color:var(--white);
     font-size: 1.7rem;
     padding:1rem 3rem;

@@ -117,7 +117,7 @@ Discover the cultural heritage and iconic landmarks of India with our Premium 5N
               </div>
               <div class="content">
                  <h3>Serene Bali</h3>
-                 <p>5N | Experience a memorable vacation in the mystical land of Bali. Get an extra dose of thrill as you enjoy water sports at Tanjung Benoa Beach.</p>
+                 <p>5N | Experience a memorable vacation in the mystical land of Bali. Get an extra dose of thrill as you enjoy water sports at Tanjung Benoa Beach.enowned for its stunning natural beauty, rich cultural</p>
               </div>
            </div>
            <a href="book.php?price= 4000&place= Bali" class="btn">$4000</a>
@@ -130,7 +130,7 @@ Discover the cultural heritage and iconic landmarks of India with our Premium 5N
               </div>
               <div class="content">
                  <h3>China </h3>
-                 <p>4 N | Discover the wonders of China with this mesmerizing 4-night tour, offering an unforgettable experience centered around a visit to the iconic Great Wall</p>
+                 <p>4 N | Discover the wonders of China with this mesmerizing 4-night tour, offering an unforgettable experience centered around a visit to Great Wall</p>
               </div>
            </div>
            <a href="book.php?price= 4000&place= China" class="btn">$4000</a>
