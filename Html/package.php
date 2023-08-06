@@ -86,12 +86,12 @@
                 <div class="popup-content">
                     <div class="popup-container">
                         <span class="close" id="close">&times;</span>
-                        <h2>Swiss Paris Delight Itinerary</h2>
+                        <h3>Destinations: Ahmedabad - Delhi - Old Delhi - Agra</h3>
+                        <h2>Overview</h2>
                         <p><b>Duration:</b> 5 nights</p>
-                        <p><b>Highlights:</b> Bypass long lines at the Eiffel Tower with summit access.</p>
-                        <p><b>Price:</b> $1000</p>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <p><b>Highlights:</b> Overview
+Discover the cultural heritage and iconic landmarks of India with our Premium 5N Trip to Taj Mahal and Delhi. This enchanting 5-night tour will take you on a captivating adventure through some of India's most iconic destinations. From the vibrant city of Ahmedabad to the historical gems of Delhi and the timeless beauty of the Taj Mahal in Agra, this journey promises to be an unforgettable experience.</p>
+                        <p><b>Price:</b> $2000</p>
                     </div>
                 </div>
             </div>
@@ -103,11 +103,12 @@
               </div>
               <div class="content">
                  <h3>Explore Amazing Phuket - Land only</h3>
-                 <p>5 N Phuket | Discover the magic of Phuket's pristine beaches,white sands meet crystal-clear turquoise waters, creating an idyllic setting for relaxation and rejuvenation.</p>
+                 <p>5 N Phuket | Discover the magic of Phuket's pristine beaches,white sands meet crystal-clear turquoise waters, creating an idyllic setting.</p>
               </div>
            </div>
            <a href="book.php?price= 3200&place= thailand" class="btn">$3200</a>
         </div>
+
 
         <div class="box">
            <div id="card">

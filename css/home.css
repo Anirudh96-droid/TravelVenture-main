@@ -71,7 +71,8 @@ section{
  .btn{
     display: inline-block;
     background: var(--black);
-    margin-top: 1rem;
+    margin-top: 20px;
+    margin-left: 100px;
     color:var(--white);
     font-size: 1.7rem;
     padding:1rem 3rem;
@@ -328,16 +329,12 @@ footer ul li a {
  }
  
  .home-packages .box-container{
-    display: flex;
-    flex-direction:column;
+    display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
  }
  
  .home-packages .box-container .box{
-   display: flex;
-   justify-content: center; /* Align children horizontally to center */
-   align-items: stretch; /* Align children vertically to stretch */
    max-width: 800px;
    margin: 0 auto;
    padding: 20px;
