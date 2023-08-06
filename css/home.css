@@ -460,6 +460,7 @@ footer ul li a {
    }
 
    .popup-content {
+      font-size: 15px;
        background-color: white;
        padding: 20px;
        border-radius: 5px;
@@ -468,7 +469,7 @@ footer ul li a {
        margin: auto !important;
        width: fit-content;
        max-width: 400px;
-       top:50%;
+       top:40%;
    }
 
    .close {

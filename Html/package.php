@@ -86,7 +86,7 @@
                 <div class="popup-content">
                     <div class="popup-container">
                         <span class="close" id="close">&times;</span>
-                        <h3>Destinations: Ahmedabad - Delhi - Old Delhi - Agra</h3>
+                        <h2>Destinations: Ahmedabad - Delhi - Old Delhi - Agra</h2>
                         <h2>Overview</h2>
                         <p><b>Duration:</b> 5 nights</p>
                         <p><b>Highlights:</b> Overview
