@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200;1,300;1,400&display=swap');
-
+/* Anirudh, Reshma, Murali, Ravleen */
 :root {
   --main-color: #333;
   --black: #222;
@@ -381,9 +381,6 @@ h2 {
   margin: 0 10px 0 5px;
 }
 
-/*.m-0{
-  margin: 0 !important;
-}*/
 
 .dialog-box{
   position: fixed;
@@ -606,6 +603,38 @@ h2 {
 
 .footer .box-container .box a:hover i{
   padding-right: 2rem;
+}
+
+/* Package page search option  */
+.search.active {
+  background: rgba(0, 0, 0, 0.4);
+  width: 500px;
+}
+.search.active form {
+  display: inline-block;
+}
+.search {
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  background-color: var(--black);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 500ms ease;
+}
+.search > i {
+  line-height: 50px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+input[type="text"] {
+  padding: 5px;
+  background-color: transparent;
+  width: 300px;
 }
 
  /*Responsive */

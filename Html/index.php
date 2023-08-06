@@ -1,3 +1,4 @@
+<!-- Anirudh S Menon  -->
 <?php 
     session_start();
 ?>
@@ -250,7 +251,7 @@
 
 <!-- footer section ends -->
 
-    <!-- Login -->
+    <!-- Reshma - Login -->
         <div id="dialogLogin" class="dialog-box">
         <div class="dialog-content">
             <div class="container">
@@ -287,7 +288,7 @@
     </div>
     
 
-    <!-- Register -->
+    <!--Reshma - Register -->
 
     <div id="dialogRegsiter" class="dialog-box">
         <div class="dialog-content">
