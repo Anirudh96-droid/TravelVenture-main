@@ -203,19 +203,7 @@
  <!-- home about section ends -->
 
 
-        
-    <!-- Footer Section -->
-    <!-- <footer style="justify-content: center;">
-        <ul class="nav-links footer">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="package.php">Travel Packages</a></li>
-            <li><a href="book.php">book</a></li>
-            <li><a href="about.php">about</a></li>
-
-        </ul>
-    </footer> -->
-
-    <!-- footer section starts  -->
+ <!-- footer section starts  -->
 
 <section class="footer">
 
