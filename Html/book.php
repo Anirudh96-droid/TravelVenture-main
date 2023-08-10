@@ -1,4 +1,4 @@
-<!-- Reshma and Ravleen -->
+<!-- Ravleen -->
 <?php 
     session_start();
 ?>
@@ -21,7 +21,6 @@
     $( "#end_date" ).datepicker();
   } );
   </script>
-    <link rel="stylesheet"  type="text/css" href="../css/home.css">
     <title>Bookings</title>
 </head>
 <body>
@@ -114,6 +113,7 @@
                 </tr>
                 <tr class="form-row">
                     <td class="form-group">
+                        <label for="Price">Price:</label>
                         <input type="text" id="totalprice1" name="totalprice1" disabled>
                         <input type="text" id="totalprice" name="totalprice" style="display:none;">
                     </td>

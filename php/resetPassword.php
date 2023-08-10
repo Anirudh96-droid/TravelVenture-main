@@ -24,8 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     } else {
         // Display an error message if the username is not found
-        echo "Username not found. Please try again.";
-        header("Location: ../Html/login.html");
+        echo '<script type="text/javascript">
+        window.onload = function () {
+        alert("User not found"); 
+       window.location.href = "../Html/index.php";
+        };
+        </script>';
     }
 }
 ?>

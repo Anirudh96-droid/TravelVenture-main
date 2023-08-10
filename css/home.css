@@ -68,18 +68,19 @@ section{
     text-shadow: var(--text-shadow);
  }
  
- .btn{
-    display: inline-block;
-    background: var(--black);
-    margin-bottom: auto;
+ .packagebtn{
+   display: inline-block;
+   background: var(--black);
+   margin-top: 1rem;
+   color: var(--white);
+   font-size: 1.7rem;
+   padding: 1rem 3rem;
+   cursor: pointer;
     margin-left: 110px;
-    color:var(--white);
-    font-size: 1.7rem;
-    padding:1rem 3rem;
-    cursor: pointer;
+    
  }
  
- .btn:hover{
+ .packagebtn:hover{
     background: var(--main-color);
  }
  

@@ -52,12 +52,6 @@
         document.getElementById("addressError").textContent = "Address is required";
         return false;
     }
-  
-    // Destination Validation
-    /*if (destination === "") {
-      document.getElementById("destinationError").textContent = "Destination is required";
-      return false;
-    }*/
 
     // Guest Validation
     if (guests === "") {
